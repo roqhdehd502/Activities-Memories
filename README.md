@@ -1,2 +1,5 @@
-# ActivityMemoriesProject
-Java Swing 기반으로 만들어진 운동일지 프로그램입니다.
+# ActivitiesMemories
+
+안녕하세요! 본 프로그램은 여러분들의 운동일지를 기록합니다.
+
+웨이트, 맨몸운동 등 오늘의 운동을 기록해주세요.
