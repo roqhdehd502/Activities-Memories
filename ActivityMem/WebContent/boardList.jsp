@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Activities Memories - Main</title>
+	<title>Activities Memories - List</title>
 </head>
 <body>
 	<table border="1" width="600">
@@ -19,18 +19,23 @@
 			<td>조 회</td>
 			<td>추 천</td>
 		</tr>
-		<c:forEach items="${list}" var="dto">
+		<c:forEach items="${boardList}" var="dto">
 			<tr>
 				<td>${dto.bId}</td>
 	         	<td>${dto.bName}</td>
-	         	<td>${dto.bTitle}</td>
+	         	<td>
+	         		<a href="contentView.do?bId=${dto.bId}">${dto.bTitle}</a>
+	         	</td>
 	         	<td>${dto.bDate}</td>
 	         	<td>${dto.bHit}</td>
 	         	<td>${dto.bLike}</td>
 			</tr>
 		</c:forEach>
 		<tr>
-			<td colspan="6"><button>글작성</button></td>
+			<td colspan="6">
+				<button type="button" onclick="location.href='writeView.do'">글작성</button>&nbsp;&nbsp;
+				<button type="button" onclick="location.href='main.do'">메인으로 이동</button>
+			</td>
 		</tr>
 	</table>
 </body>

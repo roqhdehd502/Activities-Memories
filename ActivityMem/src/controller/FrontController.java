@@ -66,10 +66,10 @@ public class FrontController extends HttpServlet {
 			command = new BoardListCommand();
 			command.execute(request, response);
 			viewPage = "boardList.jsp";
-		} else if (com.equals("/contenView.do")) {
+		} else if (com.equals("/contentView.do")) {
 			command = new ContentViewCommand();
 			command.execute(request, response);
-			viewPage = "contenView.jsp";
+			viewPage = "contentView.jsp";
 		} else if (com.equals("/modify.do")) {
 			command = new ModifyCommand(); 
 			command.execute(request, response);
@@ -84,6 +84,10 @@ public class FrontController extends HttpServlet {
 			command = new WriteCommand();
 			command.execute(request, response);
 			viewPage = "boardList.do";
+		} else if (com.equals("/main.do")) {
+			viewPage = "main.jsp";
+		} else if (com.equals("/likeAction.do")) {
+			viewPage = "likeAction.jsp";
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
