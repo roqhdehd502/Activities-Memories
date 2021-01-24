@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <!-- START NAV -->
+<!-- START NAV -->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-brand">
@@ -36,18 +36,10 @@
           <span></span>
           <span></span>
           <span></span>
-        </span>
+        </span>       
       </div>
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
-          <div class=" navbar-item">
-            <div class="control has-icons-left">
-              <input class="input is-rounded" type="email" placeholder="Search">
-              <span class="icon is-left">
-                <i class="fa fa-search"></i>
-              </span>
-            </div>
-          </div>
           <a class="navbar-item is-active is-size-5 has-text-weight-semibold" href="main.do">
             Home
           </a>
@@ -65,15 +57,10 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns">
-          <div class="column is-8 is-offset-5">
+          <div class="column is-center is-offset-5 ">
           	<figure class="image is-128x128">
   				<img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
 			</figure>
-			<!--  
-            <figure class="image is-16by9">
-              <img src="https://source.unsplash.com/featured/?fitness" >
-            </figure>
-            -->
           </div>
         </div>
 
@@ -88,6 +75,12 @@
                 <h1 class="title">
                 	<a href="contentView.do?bId=${dto.bId}">${dto.bTitle}</a>
                 </h1>
+                <h2 class="subtitle is-4">
+					Views ${dto.bHit}
+				</h2>
+                <h2 class="subtitle is-4">
+					Like ${dto.bLike}
+				</h2>
               </div>
             </div>
           </div>
