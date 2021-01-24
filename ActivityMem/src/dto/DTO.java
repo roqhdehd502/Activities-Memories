@@ -20,7 +20,8 @@ public class DTO {
 	private Timestamp bDate; // 작성날짜
 	private int bHit; // 조회수
 	private int bLike; // 추천수
-	//private String tempDate; // 형식 변환용 날짜
+	
+	private String tempDate; // 형식 변환용 날짜
 	
 	public DTO() { }
 
@@ -90,7 +91,7 @@ public class DTO {
 	public void setbLike(int bLike) {
 		this.bLike = bLike;
 	}
-	/*
+
 	public String getTempDate() {
 		return tempDate;
 	}
@@ -98,5 +99,4 @@ public class DTO {
 	public void setTempDate(String tempDate) {
 		this.tempDate = tempDate;
 	}
-	*/
 }

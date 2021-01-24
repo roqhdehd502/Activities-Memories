@@ -5,10 +5,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Activities Memories - Write</title>
+	<link href="bulma/css/bulma.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<table border="1" width="500px">
-		<form action="write.do" method="post">
+	<form action="write.do" method="post">
+		<table class="table" border="1">
 			<tr>
 				<td>이름</td>
 				<td><input type="text" name="bName"></td>
@@ -27,7 +28,7 @@
 					<button type="button" onclick="location.href='boardList.do'">목록</button>
 				</td>
 			</tr>
-		</form>
-	</table>
+		</table>
+	</form>
 </body>
 </html>

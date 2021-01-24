@@ -13,6 +13,7 @@ import command.BoardListCommand;
 import command.Command;
 import command.ContentViewCommand;
 import command.DeleteCommand;
+import command.LikeCommand;
 import command.ModifyCommand;
 import command.WriteCommand;
 
@@ -86,8 +87,10 @@ public class FrontController extends HttpServlet {
 			viewPage = "boardList.do";
 		} else if (com.equals("/main.do")) {
 			viewPage = "main.jsp";
-		} else if (com.equals("/likeAction.do")) {
-			viewPage = "likeAction.jsp";
+		} else if (com.equals("/like.do")) {
+			command = new LikeCommand();
+			command.execute(request, response);
+			viewPage = "boardList.do";
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);

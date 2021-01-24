@@ -226,7 +226,7 @@ public class DAO {
 		}
 	}
 
-	public int upLike(String bId) {
+	public void upLike(String bId) {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 
@@ -250,6 +250,5 @@ public class DAO {
 				e2.printStackTrace();
 			}
 		}
-		return -1;
 	}
 }
