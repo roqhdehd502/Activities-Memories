@@ -56,33 +56,34 @@
       </div>
       <br>
 	  <form action="modify.do" method="post">
-	  	  input type="hidden" name="bId" value="${contentView.bId}">	
+	  	  <input type="hidden" name="bId" value="${contentView.bId}">
 	      <div class="columns">
 	        <div class="column is-6 is-offset-3">
 	          <div class="box">
+	          	<!--  
 	          	<div class="field">
 	              <label class="label">Views</label>
 	              <div class="control">
 	                ${contentView.bHit}
 	              </div>
-	            </div>
+	            </div>-->
 	          
 	            <div class="field">
-	              <label class="label">Name</label>
+	              <label class="label">이름</label>
 	              <div class="control">
 	                <input class="input" type="text" name="bName" value="${contentView.bName}">
 	              </div>
 	            </div>
 	
 	            <div class="field">
-	              <label class="label">Title</label>
+	              <label class="label">종목</label>
 	              <div class="control">
 	                <input class="input" type="text" name="bTitle" value="${contentView.bTitle}">
 	              </div>
 	            </div>
 	
 	            <div class="field">
-	              <label class="label">Diary Contents</label>
+	              <label class="label">일지내용</label>
 	              <div class="control">
 	                <textarea class="textarea">${contentView.bContent}</textarea>
 	              </div>
@@ -90,12 +91,10 @@
 	
 	            <div class="field is-grouped has-text-centered">
 	              <div class="control">
-	              	<input class="button is-link is-large" type="submit" value="일지수정">
-	              	<!-- 
-	              		<button class="button" onclick="location.href='boardList.do'">목록</button>&nbsp;&nbsp;
-					<button class="button" onclick="location.href='delete.do?bId=${contentView.bId}'">삭제</button>&nbsp;&nbsp;
-					<button class="button" onclick="location.href='likeAction.do?bId=${contentView.bId}'">추천</button>
-	              	 -->
+	              	<input class="button is-link is-large" type="submit" value="일지수정">&nbsp;&nbsp;
+	              	<button class="button is-link is-large" type="button" onclick="location.href='boardList.do'">목록</button>&nbsp;&nbsp;
+					<button class="button is-link is-large" type="button" onclick="location.href='delete.do?bId=${contentView.bId}'">삭제</button>&nbsp;&nbsp;
+					<button class="button is-link is-large" type="button" onclick="location.href='likeAction.do?bId=${contentView.bId}'">추천</button>
 	              </div>
 	            </div>         
 	          </div>

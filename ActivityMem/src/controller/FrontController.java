@@ -17,31 +17,19 @@ import command.LikeCommand;
 import command.ModifyCommand;
 import command.WriteCommand;
 
-/**
- * Servlet implementation class FrontController
- */
 @WebServlet("*.do")
 public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
     public FrontController() {
         super();
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("doGet");
 		actionDo(request, response);
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("doPost");
 		actionDo(request, response);
@@ -91,6 +79,8 @@ public class FrontController extends HttpServlet {
 			command = new LikeCommand();
 			command.execute(request, response);
 			viewPage = "boardList.do";
+		} else if (com.equals("/help.do")) {
+			viewPage = "help.jsp";
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);

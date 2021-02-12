@@ -5,11 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Map;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
-import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 
 import dto.DTO;
@@ -37,8 +35,9 @@ public class DAO {
 			connection = dataSource.getConnection();
 
 			String query = "SELECT bId, bName, bTitle,"
-					+ " bContent, bDate, bHit, bLike "
-					+ "FROM board ";
+						 	+ " bContent, bDate, bHit, bLike "
+						 + " FROM board "
+						 + " ORDER BY bDate DESC ";
 			preparedStatement = connection.prepareStatement(query);
 			resultSet = preparedStatement.executeQuery();
 			while (resultSet.next()) {

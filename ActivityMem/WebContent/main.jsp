@@ -33,7 +33,7 @@
               <h1 class="title is-1 ">Helps</h1>
               <hr class="content-divider">
               <h2 class="subtitle">처음은 항상 쉽지만은 않죠.<br> 궁금한게 있으신가요?</h2>
-              <a href="#" class="button is-white is-inverted">Help&ensp;<i class="fad fa-chevron-right"></i></a>
+              <a href="help.do" class="button is-white is-inverted">Help&ensp;<i class="fad fa-chevron-right"></i></a>
             </div>
           </div>
         </div>

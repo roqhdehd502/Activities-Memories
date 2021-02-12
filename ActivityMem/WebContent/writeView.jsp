@@ -60,21 +60,21 @@
 	        <div class="column is-6 is-offset-3">
 	          <div class="box">
 	            <div class="field">
-	              <label class="label">Name</label>
+	              <label class="label">이름</label>
 	              <div class="control">
 	                <input class="input" type="text" name="bName" placeholder="당신의 이름을 입력하세요.">
 	              </div>
 	            </div>
 	
 	            <div class="field">
-	              <label class="label">Title</label>
+	              <label class="label">종목</label>
 	              <div class="control">
-	                <input class="input" type="text" name="bTitle" placeholder="일지의 제목을 입력하세요.">
+	                <input class="input" type="text" name="bTitle" placeholder="일지의 종목을 입력하세요.">
 	              </div>
 	            </div>
 	
 	            <div class="field">
-	              <label class="label">Diary Contents</label>
+	              <label class="label">일지내용</label>
 	              <div class="control">
 	                <textarea class="textarea" placeholder="운동일지 내용을 입력하세요."></textarea>
 	              </div>
@@ -82,7 +82,8 @@
 	
 	            <div class="field is-grouped has-text-centered">
 	              <div class="control">
-	              	<input class="button is-link is-large" type="submit" value="일지작성">
+	              	<input class="button is-link is-large" type="submit" value="일지작성">&nbsp;&nbsp;
+	              	<button class="button is-link is-large" type="button" onclick="location.href='boardList.do'">목록</button>
 	              </div>
 	            </div>
 	          </div>
